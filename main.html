@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Uol</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/781626082809217057/1035288811288137829/logo_1.png" alt="logo">
+        <botton>
+            <ion-icon name="people-sharp"></ion-icon>
+        </botton>
+    </header>
+    <div class="login" id="login">
+        <img src="https://cdn.discordapp.com/attachments/781626082809217057/1035288811288137829/logo_1.png" alt="logo">
+        <div class="loading">
+            <p></p>
+            <input type="text" data-identifier="enter-name" id="name-login" placeholder="Digite seu nome">
+            <button id="button-login" data-identifier="start" class="button">Entrar</button>
+        </div>
+        <img id="img" class="hidden" src="https://i.gifer.com/origin/b4/b4d657e7ef262b88eb5f7ac021edda87.gif">
+    </div>
+    <main>
+        <ul class="messages">
+        </ul>
+    </main>
+    <footer>
+        <input id="text-message" type="text" placeholder="Escreva aqui...">
+        <button id="send-message">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

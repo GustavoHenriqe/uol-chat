@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color:  #E5E5E5;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 375px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    padding-right: 22px;
+    padding-left: 22px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+    background-color: #ffff;
+}
+
+header > img{
+    width: 75px;
+    height: 53px;
+}
+
+header ion-icon{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+/* Main */
+
+main{
+    margin-top: 80px;
+    padding-top: 26px;
+    margin-bottom: 80px;
+    padding-bottom: 11px;
+    width: 375px;
+
+}
+
+.messages li {
+    padding: 9px 9px 9px 9px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    min-height: 40px;
+    word-break: break-all;
+    align-items: center;
+    line-height: 20px
+}
+
+.message-hour{
+    color: gray;
+    font-weight: 300;
+}
+
+.status{
+    background-color: #DCDCDC;
+}
+
+.message{
+    background-color: #ffff;
+}
+
+.message-name{
+    font-weight: bolder;
+}
+
+/*Login Main*/
+
+.login{
+    position: fixed;
+    top: 0;
+    background-color: #ffff;
+    width: 375px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .loading > input{
+    width: 261px;
+    height: 54px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #D7D7D7;
+    text-align: center;
+    font-size:large;
+    outline: 0;
+}
+
+.login .loading > input::placeholder{
+    color: #AEAEAE;
+    text-align: center;
+    font-size: 18px;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.login > img{
+    width: 130px;
+    height: 92px;
+    margin-bottom: 94px;
+}
+
+.login .loading > button{
+    width: 109px;
+    height: 45px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.login p{
+    margin-bottom: 10px;
+    color: red;
+    font-weight: 700;
+}
+.login .loading > button:hover{
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*Rodapé de mensagens*/
+
+footer{
+    width: 375px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #ffff;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+footer > input{
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: large;
+}
+
+footer > input:focus{
+    outline: 0
+}
+
+footer > input::placeholder{
+    font-style: italic;
+    font-size: large
+}
+
+footer > button{
+    background-color: #ffff;
+    cursor: pointer;
+    border: none;
+}
+
+footer ion-icon{
+    width: 32px;
+    height: 32px;
+}
+
+.hidden{
+    display: none;
+}
